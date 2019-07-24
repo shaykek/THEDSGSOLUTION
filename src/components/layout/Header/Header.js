@@ -29,6 +29,7 @@ const Header = ({ logo, navigation }) => {
             </MobileMenu>
             <Nav links={navigation.main} {...{ onMouseEnter }} />
             <Link to="/">
+              {console.log(logo)}
               <Image className="header__logo" {...logo} />
             </Link>
           </main>

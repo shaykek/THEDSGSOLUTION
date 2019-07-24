@@ -1,5 +1,5 @@
 .header {
-  background-color: #fff;
+  background-color: #1e1e1e;
   padding: 0.55rem 0 0;
 
   &__main {
@@ -12,6 +12,6 @@
     max-width: 130px;
     display: inline-block;
     height: auto;
-    filter: contrast(105%);
+    // filter: contrast(105%);
   }
 }
