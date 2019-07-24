@@ -85,8 +85,10 @@
 
     &--is-active {
       opacity: 1;
-      border: 2px solid #bfc1ff;
+      border: 2px solid #282828;
       position: absolute;
+      background: #282828;
+      color: #fff;
       top: 0;
     }
   }
@@ -122,9 +124,10 @@
   &__content-box {
     width: 100%;
     margin: 0.625rem auto 0;
-    background-color: #ffffff;
+    background-color: #282828;
     padding: 1.5625rem;
-    border: 2px solid #bfc1ff;
+    color: #fff;
+    border: 2px solid #282828;
     border-radius: 0.625rem;
     box-shadow: 5px 20px 40px rgba(#000, 0.22);
   }
@@ -184,7 +187,7 @@
       &--is-active {
         position: static;
         transform: scale(1.25);
-        border: 2px solid #bfc1ff;
+        // border: 2px solid #bfc1ff;
       }
     }
 
