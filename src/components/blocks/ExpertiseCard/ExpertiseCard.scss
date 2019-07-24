@@ -1,14 +1,13 @@
 .expertise-card {
-  
   &__main {
     height: 100%;
-    padding: 2.5rem;
-    border-radius: 1.25rem;
-    transition: box-shadow 0.5s ease-in-out; 
+    padding: 0 0 2.5rem;
+    // border-radius: 1.25rem;
+    background: linear-gradient(45deg, #ff0066, #ff00e6);
+    transition: box-shadow 0.5s ease-in-out;
 
     display: flex;
     flex-direction: column;
-
 
     &:hover {
       box-shadow: 0 1.25rem 2.5rem rgba(#000, 0.2);
@@ -17,7 +16,7 @@
 
   &__title,
   &__text {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   &__title {
@@ -26,10 +25,10 @@
     font-weight: 500;
     text-align: center;
     color: #000;
+    background: #00000091;
 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+    padding: 1rem 0;
+    color: #fff;
     width: 100%;
   }
 
