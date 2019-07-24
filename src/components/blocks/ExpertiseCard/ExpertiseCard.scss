@@ -12,6 +12,24 @@
     &:hover {
       box-shadow: 0 1.25rem 2.5rem rgba(#000, 0.2);
     }
+
+    &--flower {
+      background: linear-gradient(45deg, #9a16ff, #f700ff);
+    }
+
+    &--polar {
+      background: linear-gradient(45deg, #00ff44, #0055ff);
+    }
+
+    &--rose {
+      background: linear-gradient(45deg, #ff0066, #ff00e6);
+    }
+    &--sky {
+      background: linear-gradient(45deg, #00ffff, #0055ff);
+    }
+    &--coral {
+      background: linear-gradient(45deg, #ff00e6, #5704ff);
+    }
   }
 
   &__title,

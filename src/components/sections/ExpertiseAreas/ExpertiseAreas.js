@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import ExpertiseCard from '../../blocks/ExpertiseCard';
+import ExpertiseCard from "../../blocks/ExpertiseCard";
 
-import './ExpertiseAreas.scss';
+import "./ExpertiseAreas.scss";
 
-const ExpertiseAreas = ({ title, cards }) => {
-  const renderExpertiseCard = (card) => (
-    <ExpertiseCard key={card.title} {...{card}} />
+const ExpertiseAreas = ({ title, cards, variant }) => {
+  const renderExpertiseCard = card => (
+    <ExpertiseCard key={card.title} {...{ card }} />
   );
 
   return (
@@ -30,9 +30,9 @@ ExpertiseAreas.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
     })
-  ).isRequired,
+  ).isRequired
 };
 
 export default ExpertiseAreas;
