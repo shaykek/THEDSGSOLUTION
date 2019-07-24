@@ -24,7 +24,7 @@ const NavSub = ({ location: { pathname }, nextRef, prevRef }) => {
     .reverse();
 
   const activeLinkIndex = links.findIndex(link => link["to"] === pathname);
-  console.log(activeLinkIndex);
+
   // const prev = activeLinkIndex > 0 ? links[activeLinkIndex - 1] : null;
   // const beforePrev = activeLinkIndex > 1 ? links[activeLinkIndex - 2] : null;
   // const current = links[activeLinkIndex];

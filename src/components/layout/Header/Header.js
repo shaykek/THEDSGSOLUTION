@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -14,6 +14,7 @@ import "./Header.scss";
 
 const Header = ({ logo, navigation }) => {
   const { value: isOpen, setFalse: hide, setTrue: show } = useBoolean();
+  const [currentLink, setCurrentLink] = useState(0);
 
   const onMouseEnter = () => show();
 
@@ -27,9 +28,11 @@ const Header = ({ logo, navigation }) => {
             <MobileMenu>
               <NavMobile config={navigation.sub} />
             </MobileMenu>
-            <Nav links={navigation.main} {...{ onMouseEnter }} />
+            <Nav
+              links={navigation.main}
+              {...{ onMouseEnter, setCurrentLink }}
+            />
             <Link to="/">
-              {console.log(logo)}
               <Image className="header__logo" {...logo} />
             </Link>
           </main>
@@ -38,7 +41,7 @@ const Header = ({ logo, navigation }) => {
       <DropDownMenu
         isOpen={isOpen}
         config={navigation.sub}
-        {...{ onMouseLeave }}
+        {...{ onMouseLeave, currentLink }}
       />
     </>
   );

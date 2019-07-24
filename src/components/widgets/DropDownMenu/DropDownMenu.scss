@@ -1,16 +1,17 @@
 .drop-down-menu {
   position: absolute;
   z-index: 4096;
-  background-color: rgba(#fff, 0.9);
+  background: #ccc;
   width: 100%;
   top: 103px;
   display: none;
 
   &__main {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    // align-items: center;
 
-    padding: 0.8125rem 0;
+    padding: 2rem 0;
   }
 
   &__image {
@@ -27,20 +28,25 @@
     flex: 1;
 
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    // flex-direction: column;
   }
 
   &__link {
     font-family: "Roboto", sans-serif;
-    font-size: 1rem;
-    line-height: 1.3125rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+
     font-weight: bold;
     color: #707070;
-    padding: 0.8125rem 0;
+
     transition: color 0.3s ease-in-out;
 
     &:hover {
       color: #aeabab;
+    }
+    &--current {
+      color: #000;
     }
   }
 
