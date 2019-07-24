@@ -2,16 +2,12 @@
   background: #dfdfdf;
   padding: 2rem 0;
   &__main {
-    // display: grid;
-    // grid-template-columns: repeat(1, 1fr);
-    // align-items: center;
-    // justify-items: center;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     position: relative;
-    // padding: 0 2.5rem 2rem;
   }
 
   &__link {
@@ -21,6 +17,7 @@
     font-weight: bold;
     color: #2e2e2e63;
     transition: color 0.3s ease-in-out;
+    padding-left: 4rem;
 
     &--active {
       color: #2e2e2e;
