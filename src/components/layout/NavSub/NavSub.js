@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Link, withRouter } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faChevronLeft
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faChevronRight,
+//   faChevronLeft
+// } from "@fortawesome/free-solid-svg-icons";
 
 import { AppContext } from "../../../context/app";
 
@@ -24,20 +24,30 @@ const NavSub = ({ location: { pathname }, nextRef, prevRef }) => {
     .reverse();
 
   const activeLinkIndex = links.findIndex(link => link["to"] === pathname);
-
-  const prev = activeLinkIndex > 0 ? links[activeLinkIndex - 1] : null;
-  const beforePrev = activeLinkIndex > 1 ? links[activeLinkIndex - 2] : null;
-  const current = links[activeLinkIndex];
-  const next =
-    activeLinkIndex < links.length - 1 ? links[activeLinkIndex + 1] : null;
-  const afterNext =
-    activeLinkIndex < links.length ? links[activeLinkIndex] : null;
+  console.log(activeLinkIndex);
+  // const prev = activeLinkIndex > 0 ? links[activeLinkIndex - 1] : null;
+  // const beforePrev = activeLinkIndex > 1 ? links[activeLinkIndex - 2] : null;
+  // const current = links[activeLinkIndex];
+  // const next =
+  //   activeLinkIndex < links.length - 1 ? links[activeLinkIndex + 1] : null;
+  // const afterNext =
+  //   activeLinkIndex < links.length ? links[activeLinkIndex] : null;
 
   return (
     <nav className="nav-sub">
       <div className="container container--normal">
         <main className="nav-sub__main">
-          {afterNext ? (
+          {links.map(({ name, to }, i) => (
+            <Link to={to}>
+              <span
+                className={`nav-sub__link nav-sub__link--${activeLinkIndex ===
+                  i && "active"}`}
+              >
+                {name}
+              </span>
+            </Link>
+          ))}
+          {/* {afterNext ? (
             <>
               {next && (
                 <Link
@@ -86,7 +96,7 @@ const NavSub = ({ location: { pathname }, nextRef, prevRef }) => {
             </>
           ) : (
             <div className="stub" />
-          )}
+          )} */}
         </main>
       </div>
     </nav>

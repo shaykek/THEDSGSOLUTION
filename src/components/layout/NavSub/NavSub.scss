@@ -1,12 +1,17 @@
 .nav-sub {
+  background: #dfdfdf;
+  padding: 2rem 0;
   &__main {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    justify-items: center;
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // align-items: center;
+    // justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     position: relative;
-    padding: 0 2.5rem 2rem;
+    // padding: 0 2.5rem 2rem;
   }
 
   &__link {
@@ -14,8 +19,12 @@
     font-size: 1.25rem;
     line-height: 2rem;
     font-weight: bold;
-    color: #2e2e2e;
+    color: #2e2e2e63;
     transition: color 0.3s ease-in-out;
+
+    &--active {
+      color: #2e2e2e;
+    }
 
     &--roily {
       display: none;
@@ -63,53 +72,53 @@
     }
   }
 
-  &__chevron {
-    font-size: 1.5rem;
-    color: #6b6b6b;
+  //   &__chevron {
+  //     font-size: 1.5rem;
+  //     color: #6b6b6b;
 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  //     position: absolute;
+  //     top: 50%;
+  //     transform: translateY(-50%);
 
-    &--left {
-      left: 0;
-    }
+  //     &--left {
+  //       left: 0;
+  //     }
 
-    &--right {
-      right: 0;
-    }
-  }
+  //     &--right {
+  //       right: 0;
+  //     }
+  //   }
 
-  @media (min-width: 426px) {
-    &__link {
-      font-size: 1.75rem;
-      line-height: 2.5rem;
-    }
-  }
+  //   @media (min-width: 426px) {
+  //     &__link {
+  //       font-size: 1.75rem;
+  //       line-height: 2.5rem;
+  //     }
+  //   }
 
-  @media (min-width: 576px) {
-    &__main {
-      grid-template-columns: repeat(3, 1fr);
-      margin-top: 2.5rem;
-      padding: 0 2.5rem;
-    }
+  //   @media (min-width: 576px) {
+  //     &__main {
+  //       grid-template-columns: repeat(3, 1fr);
+  //       margin-top: 2.5rem;
+  //       padding: 0 2.5rem;
+  //     }
 
-    &__link {
-      &--roily {
-        display: initial;
-      }
-    }
-  }
+  //     &__link {
+  //       &--roily {
+  //         display: initial;
+  //       }
+  //     }
+  //   }
 
-  @media (min-width: 992px) {
-    &__link {
-      font-size: 3rem;
-      line-height: 5rem;
+  //   @media (min-width: 992px) {
+  //     &__link {
+  //       font-size: 3rem;
+  //       line-height: 5rem;
 
-      &--roily {
-        font-size: 1.7rem;
-        line-height: 3.3125rem;
-      }
-    }
-  }
+  //       &--roily {
+  //         font-size: 1.7rem;
+  //         line-height: 3.3125rem;
+  //       }
+  //     }
+  //   }
 }
