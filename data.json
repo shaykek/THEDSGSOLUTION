@@ -2,8 +2,8 @@
   "template": {
     "header": {
       "logo": {
-        "src": "images/logo/ieo.gif",
-        "alt": "ieo website"
+        "src": "images/logo/dsg.gif",
+        "alt": "dsg website"
       }
     },
     "footer": {
@@ -184,23 +184,28 @@
         "cards": [
           {
             "title": "שיווק דיגיטלי",
-            "image": "images/expertise/digital-marketing.png"
+            "image": "images/expertise/digital-marketing.png",
+            "variant": "flower"
           },
           {
             "title": "פתרונות IT",
-            "image": "images/expertise/it-solutions.png"
+            "image": "images/expertise/it-solutions.png",
+            "variant": "polar"
           },
           {
             "title": "הקמה, פיתוח ותפעול",
-            "image": "images/expertise/constr-dev-oper.png"
+            "image": "images/expertise/constr-dev-oper.png",
+            "variant": "rose"
           },
           {
             "title": "אבטחת מידע",
-            "image": "images/expertise/information-security.png"
+            "image": "images/expertise/information-security.png",
+            "variant": "sky"
           },
           {
             "title": "פתרונות סליקה",
-            "image": "images/expertise/cleaning-solutions.png"
+            "image": "images/expertise/cleaning-solutions.png",
+            "variant": "coral"
           }
         ]
       },
