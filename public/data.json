@@ -1065,7 +1065,8 @@
       },
       "form": {
         "url": "form.json"
-      }
+      },
+      "phonecodes": "phonecodes.json"
     },
     "hub": {
       "title": "Hub",

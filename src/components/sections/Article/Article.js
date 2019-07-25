@@ -46,11 +46,11 @@ const Article = ({
               : renderContent(content, "article", variant)}
           </div>
         </div>
-        {contact && (
+        {/* {contact && (
           <div className="article__contact">
             <ContactUs />
           </div>
-        )}
+        )} */}
         {children}
       </main>
     </div>
