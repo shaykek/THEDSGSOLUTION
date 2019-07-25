@@ -1049,16 +1049,22 @@
       }
     },
     "contact-us": {
-      "title": "צור קשר",
-      "subtitle": [
-        "על מנת לקבל מידע נוסף על המוצרים והשירותים שלנו, מלא\\י פרטים ונחזור אלייך בהקדם"
-      ],
       "hero": {
         "src": "images/pages/contact-us/hero.png",
         "alt": "צור קשר"
       },
       "form": {
-        "url": "https://payment.gobemark.info/apis/configs/forms/?json=ieo/contact/index"
+        "url": "form.json"
+      }
+    },
+    "data-analysis-form": {
+      "title": "שדות חובה",
+      "hero": {
+        "src": "images/pages/contact-us/hero.png",
+        "alt": "צור קשר"
+      },
+      "form": {
+        "url": "form.json"
       }
     },
     "hub": {

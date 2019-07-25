@@ -1,0 +1,27 @@
+{
+  "title": "שדות חובה",
+  "inputs": {
+    "name:first": {
+      "label": "שם",
+      "type": "text",
+      "required": true
+    },
+    "phone": {
+      "label": "מספר טלפון *",
+      "type": "tel",
+      "required": true
+    },
+    "email": {
+      "label": "דוא\"ל *",
+      "type": "email",
+      "required": true
+    },
+
+    "submit": {
+      "label": "ניתוח דאטה",
+      "type": "submit",
+      "method": "POST",
+      "action": ""
+    }
+  }
+}
