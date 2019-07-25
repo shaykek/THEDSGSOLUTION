@@ -5,7 +5,7 @@ import ExpertiseCard from "../../blocks/ExpertiseCard";
 
 import "./ExpertiseAreas.scss";
 
-const ExpertiseAreas = ({ title, cards, variant }) => {
+const ExpertiseAreas = ({ title, cards }) => {
   const renderExpertiseCard = card => (
     <ExpertiseCard key={card.title} {...{ card }} />
   );
@@ -29,8 +29,8 @@ ExpertiseAreas.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired
+      image: PropTypes.string.isRequired
+      // text: PropTypes.string.isRequired
     })
   ).isRequired
 };

@@ -8,7 +8,7 @@ import useFetch from "../hooks/useFetch";
 const ContactUs = () => {
   const {
     pages: {
-      "contact-us": { title, subtitle, form }
+      "contact-us": { form }
     }
   } = useContext(AppContext);
 

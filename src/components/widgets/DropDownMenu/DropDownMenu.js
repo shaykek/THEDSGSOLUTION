@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import { Link, withRouter } from "react-router-dom";
 import { SlideDown } from "react-slidedown";
 
-import Image from "../../shared/Image";
-
 import "react-slidedown/lib/slidedown.css";
 import "./DropDownMenu.scss";
 

@@ -6,7 +6,7 @@
 
   &__title {
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.875rem;
     line-height: 1.875rem;
     font-weight: bold;
     padding-bottom: 3.125rem;
@@ -23,10 +23,6 @@
     display: flex;
     text-align: right;
     flex-direction: column;
-
-    &--down {
-      margin-top: 17px;
-    }
   }
 
   &__field {
@@ -37,7 +33,11 @@
 
     &--none-line {
       border: 0;
-      // padding: 0;
+    }
+
+    &--box {
+      padding: 0;
+      width: 16rem;
     }
   }
 

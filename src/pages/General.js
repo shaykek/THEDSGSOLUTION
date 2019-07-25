@@ -5,7 +5,6 @@ import { AppContext } from "../context/app";
 import NavSub from "../components/layout/NavSub";
 import Article from "../components/sections/Article";
 import DataAnalysisForm from "../components/forms/dataAnalysisForm";
-// import Showcase from "../components/sections/Showcase";
 
 import NotFound from "../pages/NotFound";
 
@@ -34,7 +33,7 @@ const General = ({
   }
 
   const {
-    [name]: { article, showcase }
+    [name]: { article }
   } = pages;
 
   return (

@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ContactUs from "../../../pages/ContactUs";
-
 import Image from "../../shared/Image";
 
 import { renderContent } from "../../../helpers";
@@ -13,7 +11,6 @@ const Article = ({
   variant,
   banner,
   content,
-  contact,
   title,
   thin = false,
   align,

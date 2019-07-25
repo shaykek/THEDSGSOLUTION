@@ -22,7 +22,7 @@ const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
             </label>
           </div>
           <div className="analysis__inner ">
-            <div className="analysis__field">
+            <div className="analysis__field analysis__field--box">
               <select className="analysis__field analysis__field--none-line analysis__code">
                 <option>code</option>
                 {data.map(({ dial_code }) => (

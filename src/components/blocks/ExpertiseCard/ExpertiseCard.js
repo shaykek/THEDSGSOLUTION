@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 import Image from "../../shared/Image";
 
@@ -22,13 +22,13 @@ const ExpertiseCard = ({ card }) => (
   </div>
 );
 
-ExpertiseCard.propTypes = {
-  card: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    variant: PropTypes.string
-  })
-};
+// ExpertiseCard.propTypes = {
+//   card: PropTypes.shape({
+//     title: PropTypes.string.isRequired,
+//     image: PropTypes.string.isRequired,
+//     text: PropTypes.string.isRequired,
+//     variant: PropTypes.string
+//   })
+// };
 
 export default ExpertiseCard;
