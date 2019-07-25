@@ -26,7 +26,7 @@ const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
               <select className="analysis__field analysis__field--none-line analysis__code">
                 <option>code</option>
                 {data.map(({ dial_code }) => (
-                  <option>{dial_code}</option>
+                  <option key="dial_code">{dial_code}</option>
                 ))}
               </select>
 
