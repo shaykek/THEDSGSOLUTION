@@ -1057,6 +1057,16 @@
         "url": "form.json"
       }
     },
+    "data-analysis-form": {
+      "title": "שדות חובה",
+      "hero": {
+        "src": "images/pages/contact-us/hero.png",
+        "alt": "צור קשר"
+      },
+      "form": {
+        "url": "form.json"
+      }
+    },
     "hub": {
       "title": "Hub",
       "article": {
