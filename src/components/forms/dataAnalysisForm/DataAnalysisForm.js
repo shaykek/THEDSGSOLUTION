@@ -2,7 +2,10 @@ import React from "react";
 import Image from "../../shared/Image";
 import useFetch from "../../../hooks/useFetch";
 import "./DataAnalysisForm.scss";
-// dial_code
+
+import useForm from "../../../hooks/useForm";
+import validation from "../../../hooks/validation";
+
 const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
   const { data } = useFetch(phonecodes);
 
@@ -25,14 +28,14 @@ const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
             <div className="analysis__field analysis__field--box">
               <select className="analysis__field analysis__field--none-line analysis__code">
                 <option>code</option>
-                {data.map(({ dial_code }) => (
-                  <option key="dial_code">{dial_code}</option>
+                {data.map(({ dial_code }, i) => (
+                  <option key={i}>{dial_code}</option>
                 ))}
               </select>
 
               <input
                 type="text"
-                className="analysis__field analysis__field--none-line"
+                className="analysis__field analysis__field--none-line analysis__phone"
               />
             </div>
             <label>

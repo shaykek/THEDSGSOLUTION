@@ -25,20 +25,12 @@ const NavSub = ({ location: { pathname }, nextRef, prevRef }) => {
 
   const activeLinkIndex = links.findIndex(link => link["to"] === pathname);
 
-  // const prev = activeLinkIndex > 0 ? links[activeLinkIndex - 1] : null;
-  // const beforePrev = activeLinkIndex > 1 ? links[activeLinkIndex - 2] : null;
-  // const current = links[activeLinkIndex];
-  // const next =
-  //   activeLinkIndex < links.length - 1 ? links[activeLinkIndex + 1] : null;
-  // const afterNext =
-  //   activeLinkIndex < links.length ? links[activeLinkIndex] : null;
-
   return (
     <nav className="nav-sub">
       <div className="container container--normal">
         <main className="nav-sub__main">
           {links.map(({ name, to }, i) => (
-            <Link to={to}>
+            <Link to={to} key={i}>
               <span
                 className={`nav-sub__link nav-sub__link--${activeLinkIndex ===
                   i && "active"}`}
@@ -47,56 +39,6 @@ const NavSub = ({ location: { pathname }, nextRef, prevRef }) => {
               </span>
             </Link>
           ))}
-          {/* {afterNext ? (
-            <>
-              {next && (
-                <Link
-                  className="nav-sub__chevron nav-sub__chevron--right"
-                  to={next.to}
-                >
-                  <span ref={nextRef}>
-                    <FontAwesomeIcon icon={faChevronRight} />
-                  </span>
-                </Link>
-              )}
-
-              <Link
-                className={`nav-sub__link nav-sub__link--active nav-sub__link--${
-                  current.variant
-                }`}
-                to={current.to}
-              >
-                {current.name}
-              </Link>
-            </>
-          ) : (
-            <div className="stub" />
-          )}
-          {prev ? (
-            <>
-              <Link className="nav-sub__link nav-sub__link--roily" to={prev.to}>
-                {prev.name}
-              </Link>
-              {beforePrev && (
-                <Link
-                  className="nav-sub__link nav-sub__link--roily"
-                  to={prev.to}
-                >
-                  {prev.name}
-                </Link>
-              )}
-              <Link
-                className="nav-sub__chevron nav-sub__chevron--left"
-                to={prev.to}
-              >
-                <span ref={prevRef}>
-                  <FontAwesomeIcon icon={faChevronLeft} />
-                </span>
-              </Link>
-            </>
-          ) : (
-            <div className="stub" />
-          )} */}
         </main>
       </div>
     </nav>
