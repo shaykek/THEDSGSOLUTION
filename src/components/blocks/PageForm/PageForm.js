@@ -13,9 +13,6 @@ const PageForm = ({ form }) => {
       {" "}
       {loading === false && (
         <form className="page-form">
-          <header className="page-form__header">
-            <h4 className="page-form__title">{data.title}</h4>
-          </header>
           <main className="page-form__main">
             <Form inputs={data.inputs} />
           </main>

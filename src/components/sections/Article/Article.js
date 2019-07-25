@@ -21,24 +21,31 @@ const Article = ({
 }) => (
   <section className={`article ${thin && "article--gup"}`}>
     <div
-      className={`container ${
+      className={`${
         thin
-          ? `container__product container__product--theme-${variant}`
-          : "container--normal"
+          ? `container container__product container__product--theme-${variant} `
+          : ""
       }`}
     >
       <main className="article__main">
-        {title && (
-          <h2
-            className={`article__page-title article__page-title--theme-${variant}`}
-          >
-            {title}
-          </h2>
-        )}
-        <Image className="article__banner" {...banner} />
-        {align
-          ? renderContent(content, "article", variant, "justify")
-          : renderContent(content, "article", variant)}
+        <div className="article__row">
+          <div>
+            <Image className="article__banner" {...banner} />
+          </div>
+          <div>
+            {title && (
+              <h2
+                className={`article__page-title article__page-title--theme-${variant}`}
+              >
+                {title}
+              </h2>
+            )}
+
+            {align
+              ? renderContent(content, "article", variant, "justify")
+              : renderContent(content, "article", variant)}
+          </div>
+        </div>
         {contact && (
           <div className="article__contact">
             <ContactUs />

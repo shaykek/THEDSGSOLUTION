@@ -4,7 +4,7 @@ import { AppContext } from "../context/app";
 
 import NavSub from "../components/layout/NavSub";
 import Article from "../components/sections/Article";
-import Showcase from "../components/sections/Showcase";
+// import Showcase from "../components/sections/Showcase";
 
 import NotFound from "../pages/NotFound";
 
@@ -43,7 +43,7 @@ const General = ({
     >
       <NavSub {...{ nextRef, prevRef }} />
       <Article {...article} />
-      <Showcase {...showcase} />
+      {/* <Showcase {...showcase} /> */}
     </div>
   );
 };

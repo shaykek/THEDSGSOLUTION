@@ -1,38 +1,40 @@
 .contact-us {
+  background-color: #414141;
+
   &__header {
     text-align: center;
     padding-top: 2.5rem;
     padding-bottom: 4.25rem;
   }
 
-  &__title {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-weight: bold;
-    color: #2E2E2E;
-    transition: color 0.3s ease-in-out;
-    position: relative;
+  // &__title {
+  //   font-family: "Ubuntu", sans-serif;
+  //   font-size: 1.25rem;
+  //   line-height: 2rem;
+  //   font-weight: bold;
+  //   color: #fff;
+  //   transition: color 0.3s ease-in-out;
+  //   position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: calc(100% + 0.5rem);
-      left: 50%;
-      width: 122px;
-      height: 7px;
-      border-radius: 10px;
-      background: linear-gradient(45deg, #55D500, #C9C900);
-      transform: translateX(-50%);
-    }
-  }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: calc(100% + 0.5rem);
+  //     left: 50%;
+  //     width: 122px;
+  //     height: 7px;
+  //     border-radius: 10px;
+  //     background: linear-gradient(45deg, #55d500, #c9c900);
+  //     transform: translateX(-50%);
+  //   }
+  // }
 
   &__subtitle {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 1.125rem;
     line-height: 1.5rem;
     font-weight: bold;
-    color: #2E2E2E;
+    color: #2e2e2e;
     padding-top: 2rem;
   }
 
@@ -42,21 +44,21 @@
     align-items: center;
   }
 
-  @media (min-width: 426px) {
-    &__title {
-      font-size: 1.75rem;
-      line-height: 2.5rem;
-    }
-  }
+  // @media (min-width: 426px) {
+  //   &__title {
+  //     font-size: 1.75rem;
+  //     line-height: 2.5rem;
+  //   }
+  // }
 
-  @media (min-width: 822px) {
-    &__main {
-      grid-gap: 5.375rem;
-      grid-template-columns: repeat(2, 1fr);
+  // @media (min-width: 822px) {
+  //   &__main {
+  //     grid-gap: 5.375rem;
+  //     grid-template-columns: repeat(2, 1fr);
 
-      padding-bottom: 8.75rem;
-    }
-  }
+  //     padding-bottom: 8.75rem;
+  //   }
+  // }
 
   @media (min-width: 992px) {
     &__title {
@@ -64,8 +66,8 @@
       line-height: 5rem;
     }
 
-    &__main {
-      grid-gap: 10.75rem;
-    }
+    // &__main {
+    //   grid-gap: 10.75rem;
+    // }
   }
 }
