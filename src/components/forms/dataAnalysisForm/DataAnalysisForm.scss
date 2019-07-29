@@ -4,6 +4,11 @@
   color: #fff;
   padding-top: 3.125rem;
 
+  &--light {
+    background: transparent;
+    color: #000;
+  }
+
   &__title {
     font-family: "Ubuntu", sans-serif;
     font-size: 1.875rem;
@@ -75,6 +80,10 @@
 
     &:hover {
       background-color: #bbb;
+    }
+
+    &--light {
+      background: #ccc;
     }
   }
 }

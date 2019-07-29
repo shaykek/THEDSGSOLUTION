@@ -47,21 +47,21 @@
       background: transparent;
     }
 
-    &--yellow::after {
-      background: linear-gradient(45deg, #ff2c00, #ffe600);
-    }
+    // &--yellow::after {
+    //   background: linear-gradient(45deg, #ff2c00, #ffe600);
+    // }
 
-    &--purple::after {
-      background: linear-gradient(15deg, #9d7bff, #f275ff);
-    }
+    // &--purple::after {
+    //   background: linear-gradient(15deg, #9d7bff, #f275ff);
+    // }
 
-    &--blue::after {
-      background: linear-gradient(15deg, #8139ff, #00dbcc);
-    }
+    // &--blue::after {
+    //   background: linear-gradient(15deg, #8139ff, #00dbcc);
+    // }
 
-    &--green::after {
-      background: linear-gradient(15deg, #00dbfe, #00e91f);
-    }
+    // &--green::after {
+    //   background: linear-gradient(15deg, #00dbfe, #00e91f);
+    // }
 
     & + & {
       margin-right: 1.75rem;

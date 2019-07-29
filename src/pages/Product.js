@@ -7,12 +7,15 @@ import Article from "../components/sections/Article";
 import NotFound from "../pages/NotFound";
 import PageForm from "../components/blocks/PageForm/PageForm";
 
+import DataAnalysisForm from "../components/forms/dataAnalysisForm";
+
 const Product = ({
   match: {
     params: { name }
   }
 }) => {
   const { pages } = useContext(AppContext);
+  const dataAnalysisForm = pages["data-analysis-form"];
 
   if (!pages[name]) {
     return <NotFound />;
@@ -33,7 +36,10 @@ const Product = ({
         thin="true"
         align="left"
       >
-        <PageForm form={form.url} />
+        {dataAnalysisForm && (
+          <DataAnalysisForm {...{ dataAnalysisForm }} className="light" />
+        )}
+        {/* <PageForm form={form.url} /> */}
       </Article>
     </>
   );

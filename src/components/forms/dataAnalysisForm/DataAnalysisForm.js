@@ -6,7 +6,10 @@ import "./DataAnalysisForm.scss";
 import useForm from "../../../hooks/useForm";
 import validation from "../../../hooks/validation";
 
-const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
+const DataAnalysisForm = ({
+  dataAnalysisForm: { title, phonecodes },
+  className
+}) => {
   const { data } = useFetch(phonecodes);
 
   const {
@@ -29,7 +32,7 @@ const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
   );
 
   return (
-    <div className="analysis">
+    <div className={`analysis analysis--${className}`}>
       {wasSubmitted && (
         <div className="leave-data-form__success">
           הפרטים נשלחו בהצלחה, תודה
@@ -108,7 +111,11 @@ const DataAnalysisForm = ({ dataAnalysisForm: { title, phonecodes } }) => {
               {errors.email && <p className="error">{errors.email}</p>}
             </div>
           </div>
-          <input className="analysis__send" type="submit" value={title} />
+          <input
+            className={`analysis__send analysis__send--${className}`}
+            type="submit"
+            value={title}
+          />
         </form>
       )}
     </div>
