@@ -34,8 +34,10 @@ const DataAnalysisForm = ({
   return (
     <div className={`analysis analysis--${className}`}>
       {wasSubmitted && (
-        <div className="leave-data-form__success">
-          הפרטים נשלחו בהצלחה, תודה
+        <div className="analysis__success">
+          <div className="analysis__success-inner">
+            הפרטים נשלחו בהצלחה, תודה
+          </div>
         </div>
       )}
       {!wasSubmitted && (
