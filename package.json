@@ -41,5 +41,5 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1"
   },
-  "homepage": "https://akirmas.github.io/THEDSGSOLUTION"
+  "homepage": "."
 }
