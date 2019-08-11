@@ -1,3 +1,3 @@
 ## THEDSGSOLUTION
 
-Preview : https://thedsgsolution.com/#/
+Preview : https://thedsgsolution.com/
